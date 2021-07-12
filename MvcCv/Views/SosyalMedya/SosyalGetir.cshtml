@@ -1,0 +1,24 @@
+﻿@model MvcCv.Models.Entity.TblSosyalMedya
+
+@{
+    ViewBag.Title = "SosyalGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Sosyal Medya Düzenleme Sayfası</h2>
+<br />
+<form method="post">
+    @Html.Label("Ad")
+    @Html.TextBoxFor(x => x.Ad, new { @class = "form-control" })
+    <br />
+    @Html.Label("Url")
+    @Html.TextBoxFor(x => x.Link, new { @class = "form-control" })
+    <br />
+    @Html.Label("Icons")
+    @Html.TextBoxFor(x => x.Icon, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+
+</form>
+
